@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Online Doctor Consultation</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <h1 class="logo">TeleHealth</h1>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Doctors.html">Doctors</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="BMI.html">BMI</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or need assistance? Fill out the form below to get in
+          touch with our team.
+        </p>
+      
+          <form action="https://formspree.io/f/xvoeajoq" method="POST">
+            <div class="form-group">
+              <label>
+                Your name:
+                <input type="name" name="name" />
+              </label>
+              <label>
+                Your email:
+                <input type="email" name="email" />
+              </label>
+              <label for="phone">
+                Your number:
+                <input name="phone" id="phone" />
+              </label>
+              <label>
+                Your message:
+                <textarea name="message"></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit">Send</button>
+            </div>
+          </form>
+      </div>
+    </section>
+
+    <!-- Confirmation modal -->
+    <!-- <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Message Submitted</h2>
+            <p>Your message has been submitted. We will get back to you shortly.</p>
+        </div>
+    </div> -->
+
+    <!-- <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Display the confirmation modal
+    document.getElementById("confirmation-modal").style.display = "block";
+});
+
+// Close the modal when the close button is clicked
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+    document.getElementById("confirmation-modal").style.display = "none";
+});
+
+// Close the modal when the user clicks outside of it
+window.addEventListener("click", function(event) {
+    var modal = document.getElementById("confirmation-modal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
+
+</script> -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-media">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="contact-info">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>123 Street Name, City,
+                Country
+              </li>
+              <li><i class="fas fa-envelope"></i>info@example.com</li>
+              <li><i class="fas fa-phone"></i>+123 456 7890</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Online Doctor Consultation. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
